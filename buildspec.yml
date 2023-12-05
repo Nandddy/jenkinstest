@@ -2,9 +2,12 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      python: 3.8
     commands:
-        - python3 -m ensurepip --default-pip
-        - python3 -m pip install Flask
+      - python3 -m venv /root/venv
+      - . /root/venv/bin/activate
+      - pip3 install Flask
   build:
     commands:
       - echo Build started on `date`
