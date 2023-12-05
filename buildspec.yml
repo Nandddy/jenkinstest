@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-        - python3 -m pip install Flask
+        # - sudo apt-get
+        # - python3 -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
