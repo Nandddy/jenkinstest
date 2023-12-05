@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       python: 3.8
     commands:
+      - pip install pyopenssl ndg-httpsclient pyasn1
       - python -m pip install --trusted-host pypi.org Flask
   build:
     commands:
